@@ -1,4 +1,5 @@
 ---
+date: "2018-06-11"
 title: Declarative vs Imperative programming
 layout: post
 tags: [programming, declarative, imperative, programming-style]

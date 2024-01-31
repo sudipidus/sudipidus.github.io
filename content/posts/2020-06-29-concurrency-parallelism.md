@@ -1,4 +1,5 @@
 ---
+date: "2020-06-29"
 layout: post
 title: Parallelism, Concurrency And Golang
 tags: [parallelism, concurrency, threads, golang, programming]

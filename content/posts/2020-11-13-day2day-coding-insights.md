@@ -1,4 +1,5 @@
 ---
+date: "2020-11-13"
 layout: post
 title: How I work
 tags: [engineering,programming,coding,company]

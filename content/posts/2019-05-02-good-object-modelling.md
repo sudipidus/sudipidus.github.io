@@ -1,4 +1,5 @@
 ---
+date: "2019-05-02"
 layout: post
 title: Good Object Modelling 
 tags: [object,oop,object-modelling,java]

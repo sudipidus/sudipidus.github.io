@@ -1,4 +1,5 @@
 ---
+date: "2018-06-21"
 layout: post
 title: SDKMAN, Java9, Jshell, REPL
 tags: [java, skdman, java9, jshell, REPL, scripting]

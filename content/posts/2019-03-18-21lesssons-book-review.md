@@ -1,4 +1,5 @@
 ---
+date: "2019-03-18"
 title: 21 Lessons (Book Review)
 layout: post
 tags: [book-reviews,21lessons]

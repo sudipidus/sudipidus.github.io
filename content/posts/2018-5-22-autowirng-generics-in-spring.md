@@ -2,6 +2,7 @@
 title: Autowiring Generics In Spring
 layout: post
 tags: [spring, spring-boot, autowiring, Dependency-Injection, IOC]
+date: "2018-05-22"
 ---
 `@Autowired` is heavily used in Spring for injecting dependencies. By entrusting the framework itself to inject dependencies (eg: repositories interface) programmer can rest assurred and focus on core business logic of the application.
 

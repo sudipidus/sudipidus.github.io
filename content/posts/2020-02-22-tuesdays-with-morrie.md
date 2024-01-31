@@ -1,4 +1,5 @@
 ---
+date: "2020-02-22"
 layout: post
 title: (Book Review) Tuesdays with Morrie
 tags: [book-review]

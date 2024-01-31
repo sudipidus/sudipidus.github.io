@@ -1,4 +1,5 @@
 ---
+date: "2018-07-06"
 layout: post
 title: Leveraging Cron job to monitor network connection
 tags: [linux, cron, automation]

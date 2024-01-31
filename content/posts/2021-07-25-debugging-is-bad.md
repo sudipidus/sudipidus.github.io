@@ -1,4 +1,5 @@
 ---
+date: "2021-07-25"
 layout: post
 title: Debugging driven development (is bad)
 tags: [engineering,programming,coding,debugging]

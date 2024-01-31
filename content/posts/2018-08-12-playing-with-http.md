@@ -1,4 +1,5 @@
 ---
+date: "2018-08-12"
 title: Some notes on HTTP
 tags: post
 tags: [http,web,internet,netcat,networking,engineering]

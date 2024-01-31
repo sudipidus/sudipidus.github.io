@@ -1,4 +1,5 @@
 ---
+date: "2020-02-04"
 layout: post
 title: Reminder for task-warrior CLI
 tags: [linux, task-warrior, productivity]

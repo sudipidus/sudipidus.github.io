@@ -1,4 +1,5 @@
 ---
+date: "2019-09-10"
 layout: post
 title: How git stores changes 
 tags: [git,linux,zlib]

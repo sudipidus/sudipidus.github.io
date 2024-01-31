@@ -1,4 +1,5 @@
 ---
+date: "2023-06-19"
 layout: post
 title: A case of slow loading zsh
 tags: [engineering,zsh,linux,automation]

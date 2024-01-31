@@ -1,4 +1,5 @@
 ---
+date: "2020-01-29"
 layout: post
 title: Oracle to Mysql Migration 
 tags: [oracle, mysql, rdbms, dba, database]

@@ -1,4 +1,5 @@
 ---
+date: "2018-08-02"
 title: Learnings from Redis Meetup at Razorpay
 layout: post
 tags: [redis, caching, database, software-architecture, design-patterns]

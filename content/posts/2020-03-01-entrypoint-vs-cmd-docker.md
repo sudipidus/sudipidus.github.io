@@ -1,4 +1,5 @@
 ---
+date: "2020-03-01"
 layout: post
 title: ENTRYPOINT Vs CMD in Docker
 tags: [docker, container, linux, devops]

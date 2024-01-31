@@ -1,4 +1,5 @@
 ---
+date: "2020-08-24"
 layout: post
 title: Get the most out of your command line experience
 tags: [command-line, cli, productivity]

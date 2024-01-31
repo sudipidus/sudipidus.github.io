@@ -1,4 +1,5 @@
 ---
+date: "2018-06-11"
 layout: post
 title: GitHub & Microsoft Saga
 tags: [Github, Microsoft, Acquisition, Startup]

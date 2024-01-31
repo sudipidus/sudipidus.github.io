@@ -1,4 +1,5 @@
 ---
+date: "2018-08-02"
 layout: post
 title: Tracking File permissions in git
 tag: [git, tags, software, linux]

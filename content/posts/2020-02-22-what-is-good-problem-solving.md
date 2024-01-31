@@ -1,4 +1,5 @@
 ---
+date: "2020-02-22"
 layout: post
 title: What is good problem solving?
 tags: [problem-soving, programming, software-engineering]

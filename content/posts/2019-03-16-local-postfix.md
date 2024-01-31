@@ -1,4 +1,5 @@
 ---
+date: "2019-03-16"
 title: Setting up local postfix to send mails via Google's SMTP
 layout: post
 tags: [mailx,postfix,smtp,linux-hacks]

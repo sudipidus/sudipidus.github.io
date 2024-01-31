@@ -1,4 +1,5 @@
 ---
+date: "2021-09-04"
 layout: post
 title: Websockets, Dealing with realtime updates for async API
 tags: [engineering,websocket,networking,async,API,backend]
@@ -44,7 +45,7 @@ Application architecture involved an API container to which mobile/UI talked. AP
 
 #### Final Architecture
 
-![websocket](https://sudipbhandari126.github.io/resources/billbox-websocket.jpeg "websocket")
+![websocket](https://sudipidus.github.io/resources/billbox-websocket.jpeg "websocket")
 
 Technology wise since our app was written in golang we chose this library, [gorilla websocket](https://github.com/gorilla/websocket). Socket connections were authenticated by app token. We ran redis listener in go routines and on each redis message we picked corresponding socket connection (those are tagged with payment token) and closed it.
 

@@ -1,4 +1,5 @@
 ---
+date: "2020-06-01"
 layout: post
 title: Debugging Slow Queries In Backend
 tags: [backend, database, query, optimization]

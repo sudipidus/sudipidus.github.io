@@ -1,4 +1,5 @@
 ---
+date: "2019-03-14"
 layout: post
 title: Experimenting With Local Kafka cluster
 tags: [kafak,apache,zookeeper,cap, distributed-systems]

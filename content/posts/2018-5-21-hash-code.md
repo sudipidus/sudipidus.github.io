@@ -2,6 +2,7 @@
 layout: post
 title: Equals and HashCode in Java
 tags: [java, hashing]
+date:  "2018-05-21"
 ---
 
 The parent of all 'Object' classes in Java has, among many, two notable methods: equals and hashCode. For the most of the part, we can go about without tinkering/overriding these methods, but they play a significant role when we are dealing with any kind of data structure whose implementation depends on hashing. Maps, Sets, and their various derivatives and implementations of the Java Collection framework depend on the hashing of objects. Let's consider a situation where we have to create a set of some objects for our consideration.

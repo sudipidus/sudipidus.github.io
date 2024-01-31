@@ -1,4 +1,5 @@
 ---
+date: "2018-06-01"
 layout: post
 title: Working with Spring Data and Json
 tags: [spring, java, json, spring-data]

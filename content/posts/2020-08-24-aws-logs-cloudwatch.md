@@ -1,4 +1,5 @@
 ---
+date: "2020-08-24"
 layout: post
 title: Accessing Cloudwatch logs via AWS CLI
 tags: [aws, cloudwatch, logging, monitoring, devops, engineering]

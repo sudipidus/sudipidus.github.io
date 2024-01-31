@@ -1,4 +1,5 @@
 ---
+date: "2020-01-24"
 layout: post
 title: On Domain And DNS
 tags: [domain, dns, web, www, internet]

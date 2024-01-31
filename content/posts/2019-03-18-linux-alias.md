@@ -1,4 +1,5 @@
 ---
+date: "2019-03-18"
 title: Linux aliases
 layout: post
 tags: [Linux, alias, bash, shell]

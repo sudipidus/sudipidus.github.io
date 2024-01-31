@@ -1,4 +1,5 @@
 ---
+date: "2018-07-23"
 title: Learn enough to be dangerous!!
 layout: post
 tags: [education, tutorials, learning, software, programming]

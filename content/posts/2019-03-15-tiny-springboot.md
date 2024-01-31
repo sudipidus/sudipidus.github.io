@@ -1,4 +1,5 @@
 ---
+date: "2019-03-15"
 title: A tiny Springboot app
 layout: post
 tags: [springboot,java,groovy,spring,web-framework]

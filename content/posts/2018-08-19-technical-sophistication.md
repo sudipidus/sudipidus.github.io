@@ -1,4 +1,5 @@
 ---
+date: "2018-08-19"
 title: An Essay On Technical Sophistication
 layout: post
 tags: [software, programming, technical-sophistication, learning]

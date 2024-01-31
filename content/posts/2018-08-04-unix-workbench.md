@@ -1,4 +1,5 @@
 ---
+date: "2018-08-04"
 layout: post
 title: I completed Unix Workbench Course by John Hopkins University in Coursera
 tags: [unix, linux, coursera, learning]

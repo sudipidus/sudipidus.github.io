@@ -1,4 +1,5 @@
 ---
+date: "2019-06-19"
 layout: post
 title: Curious Case of super huge syslog
 tags: [linux,syslog]
