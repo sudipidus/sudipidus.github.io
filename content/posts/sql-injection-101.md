@@ -9,7 +9,7 @@ date:  "2024-02-04"
 
 Starting off with one of my favorites [https://xkcd.com/327/](xkcd comic)
 
-![exploits-of-a-mom-xkcd](https://github.com/sudipidus.github.io/blob/main/resource/exploits-of-a-mom-xkcd.png)
+![exploits-of-a-mom-xkcd](https://github.com/sudipidus/sudipidus.github.io/blob/main/resource/exploits-of-a-mom-xkcd.png)
 
 
 SQL Injection is a way where a user is able to send some 'code' as part of the input data to the server all the way back to the database. (UI layer doesn't sanitize/validate, API layer let's the malicious 'code' reach the database because it's not mindful in how to separate 'query' and 'data').
