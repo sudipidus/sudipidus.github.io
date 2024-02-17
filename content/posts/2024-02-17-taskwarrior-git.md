@@ -19,7 +19,8 @@ I wanted some discipline in progressing with my side projects most of which are 
 
 
 ### What it looks like
-![task-warrior-demo](../../resources/task-warrior.png)
+
+![task-warrior-demo](https://raw.githubusercontent.com/sudipidus/sudipidus.github.io/main/resources/taskwarrior.png)
 
 
 ### Here is the script and alias
