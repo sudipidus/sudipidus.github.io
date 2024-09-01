@@ -1,3 +1,5 @@
+[![Deploy Hugo site to Pages](https://github.com/sudipidus/sudipidus.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/sudipidus/sudipidus.github.io/actions/workflows/hugo.yaml)
+
 ### Personal Weblog
 
 blogs, tech ramblings, projects and other stuffs that I find interesting
