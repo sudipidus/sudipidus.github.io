@@ -1,3 +1,11 @@
+---
+layout: post
+title: Cataloguing My Garden
+tags: [gardening, hobbies, flowers]
+date:  "2024-11-07"
+---
+
+
 > We must cultivate our garden.
 - Volatire (Candide)
 
