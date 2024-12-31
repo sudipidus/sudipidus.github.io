@@ -6,6 +6,7 @@ tags:
   - programming
   - engineering
 date: 2024-12-31
+draft: "true"
 ---
 ### Tooling Matters
 I have been working as a software engineer for about 8 years as of this writing. Having worked in various types of organizations during this period (3 engineers starting up to hypergrowth phase companies to fairly established ones) I have had exposure various kinds of codebases, practices, tooling, conventions etc and I have come to realize how important tooling can be. Let's talk examples:
