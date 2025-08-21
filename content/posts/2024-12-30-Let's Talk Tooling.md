@@ -6,7 +6,6 @@ tags:
   - programming
   - engineering
 date: 2024-12-30
-draft: "true"
 ---
 
 ### Tooling Matters
