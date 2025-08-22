@@ -5,7 +5,10 @@ tags: post
 tags: [http,web,internet,netcat,networking,engineering]
 ---
 
-browser generates a random key (meant for symmetric encryption) encrypts is using public key and sends it to the server.. now client server can have symmetric encryption connection (faster, scales more, efficient), also validates server's identity because if it didn't have private key it would not be able to communicate with the client
+
+# Playing with HTTP: Practical Notes and Examples
+
+HTTP is the foundation of the web, but it's easy to overlook how it actually works. This post collects some hands-on notes, experiments, and practical tips for understanding HTTP, inspired by the excellent [Udacity client-server communication course](https://classroom.udacity.com/courses/ud897). Whether you're a beginner or just want to refresh your basics, try these out yourself!
 
 ## Playing with HTTP: Practical Notes and Examples
 
