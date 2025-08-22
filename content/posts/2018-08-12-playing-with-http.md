@@ -5,88 +5,117 @@ tags: post
 tags: [http,web,internet,netcat,networking,engineering]
 ---
 
-Learning from the udacity course on client server communication
-
-course link: https://classroom.udacity.com/courses/ud897
-
-Using netcat:
-
-    nc google.com 80
-    <head/get/post/put>
-    headers:
-        OPTIONS: get a list of methods supported by the URL end point
-        HEAD: just the header and not the body.. validate if the incoming data will fit the memory, cache validation
-
-xml-http-request: xhr, traditional way of doing ajax, new way is javascript promises which are chainable callbacks and are asynchronous
-
-How head is used for cache checking.. check for incoming size and the size of the data chunk stored in cache.. but with increasing assets in a website it becomes in efficient (each round trip costs network)
-
-
-Common response headers:
-    content-length: 
-        content-type: browser uses appropriate parsing enginer (render image, play audio/video)
-        Last-modified: not very good to detect modification.. (dev can change one file but upload entire project to server again)
-        E-tag: entity tag, based on file content, most servers use hashing (sort of like version control of the resources)
-        If-Modified-Since: based on last Last-modified
-        If-None-Match: based on e tag (this takes precedence over If-Modified-Since)
-
-tcp/ip joke, udp joke
-
-time to first byte (ttfb)
-head of line blocking
-
-http connection keep alive: use same channel (each http connection requires a tcp handshake underneath) (js+css bundled together in a bundle.js)
-
-
-
-using proxy:
-     export http_proxy=http://localhost:8080/
-$ export https_proxy=$http_proxy (in linux)
-there are several tools like burp suite, foxy proxy for firefox (route browser traffic through a proxy)
-
-
-tls: transfer layer security (can be combined with http->https, ftp->ftps)
-
-
-asymmetric cryptography: sign documents using public key, but documents can be fairly huge, so just sign the hash of it
-
-
-server sends a certificate, browsers store (CA collection) public key and certificates (key, domain, authority signature) 
 browser generates a random key (meant for symmetric encryption) encrypts is using public key and sends it to the server.. now client server can have symmetric encryption connection (faster, scales more, efficient), also validates server's identity because if it didn't have private key it would not be able to communicate with the client
 
+## Playing with HTTP: Practical Notes and Examples
 
-https://badssl.com/ website to find out what sort of things are valid, trustable or not
+These are some hands-on notes and experiments from the excellent [Udacity client-server communication course](https://classroom.udacity.com/courses/ud897). If you want to really understand HTTP, try these out yourself!
 
+### Using netcat to Explore HTTP
 
-http 2:
-    http 1 header cannot be compressed, 2's header can be (saving header data can be significant improvement where requests are more. )
+You can use `nc` (netcat) to manually send HTTP requests and see the raw response:
 
-    header compression, avoid head of line blocking, security via TLS are the main points
+```sh
+nc google.com 80
+GET / HTTP/1.1
+Host: google.com
+```
+Try sending `OPTIONS` or `HEAD` requests to see what methods are supported or to fetch just headers. This is a great way to see how HTTP works under the hood.
 
-    no head of line blocking: single connection, multiple streams, multiplexing: header compression.. streams can share the header too
+**More examples:**
+- `nc example.com 80` then type `HEAD / HTTP/1.1` and `Host: example.com`.
+- Use `curl -I https://www.example.com/` to see only headers.
 
+### AJAX: XHR and Modern JavaScript
 
-    what should be different with http2: (find the screenshot)
+The traditional way to do AJAX was with `XMLHttpRequest` (XHR). Now, we use the `fetch` API and Promises:
 
+```js
+fetch('https://api.example.com/data')
+    .then(res => res.json())
+    .then(data => console.log(data));
+```
 
+### HTTP Caching and Validation
 
+Browsers and proxies use headers to cache and validate resources:
+- `Last-Modified` and `If-Modified-Since`
+- `E-Tag` and `If-None-Match`
 
-javascript and CORS:  (same origin policy)
-    by default it's only allowed to interact with it's own origin
-    origin:: DAta scheme, hostname, port 
-             http:         something.com    90
+**Example:**
+```sh
+curl -I https://developer.mozilla.org/
+```
+Look for `Last-Modified` and `E-Tag` in the response.
 
-             change either one of these and the origin is different
+**Reference:** [MDN HTTP Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
 
-             can't get/fetch,
+### Common Response Headers
 
-Cross origin resources sharing
+- `Content-Length`: Size of the response body
+- `Content-Type`: How the browser should handle the response (HTML, JSON, image, etc.)
+- `Last-Modified`, `E-Tag`: For cache validation
 
-jsonp json with padding
+### Performance Concepts
 
-why it requires pre-flight: pre-flight is an OPTIONS request to check what operations and what origins are supported (just not to lose the operations)
-normal GET are not preflighted (if it's blocked it won't give any resources)
+- **Time to First Byte (TTFB):** How quickly the first byte arrives from the server
+- **Head-of-Line Blocking:** One slow request can block others (solved in HTTP/2)
+- **Keep-Alive:** Reuse TCP connections for multiple requests
 
-csrf:
-    
+### Using Proxies for Debugging
+
+Set up a proxy to inspect or modify HTTP traffic:
+
+```sh
+export http_proxy=http://localhost:8080/
+export https_proxy=$http_proxy
+```
+Tools: [Burp Suite](https://portswigger.net/burp), [FoxyProxy](https://getfoxyproxy.org/)
+
+### TLS, HTTPS, and Certificates
+
+- **TLS:** Secures HTTP (HTTPS), FTP (FTPS), etc.
+- **Certificates:** Server sends a certificate; browser checks it against trusted CAs.
+- **Symmetric/Asymmetric Crypto:** Handshake uses asymmetric, then switches to faster symmetric encryption.
+
+Test your browser's HTTPS handling at [badssl.com](https://badssl.com/).
+
+### HTTP/2: Modern Improvements
+
+- **Header Compression:** Reduces bandwidth
+- **Multiplexing:** Multiple streams over one connection, no head-of-line blocking
+- **TLS by Default:** Security is built-in
+
+**Reference:** [HTTP/2 Explained](https://http2.github.io/)
+
+### JavaScript, CORS, and Security
+
+- **Same Origin Policy:** JS can only access its own origin (scheme, host, port)
+- **CORS:** Allows controlled cross-origin requests. Preflight (OPTIONS) checks what is allowed.
+- **JSONP:** Old workaround for cross-origin requests
+
+**Example:**
+```js
+fetch('https://api.otherdomain.com/data', {
+    mode: 'cors'
+})
+```
+
+**Reference:** [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+### CSRF (Cross-Site Request Forgery)
+
+CSRF exploits browser cookies to perform unwanted actions. Mitigations include same-site cookies and CSRF tokens.
+
+**Reference:** [OWASP CSRF](https://owasp.org/www-community/attacks/csrf)
+
+---
+
+**Further Reading & Tools:**
+- [MDN HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+- [HTTPie](https://httpie.io/) — user-friendly HTTP client
+- [Postman](https://www.postman.com/) — API testing tool
+
+*Try these tools and examples to deepen your understanding of HTTP!*
+
 
