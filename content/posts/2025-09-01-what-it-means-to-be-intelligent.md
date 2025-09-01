@@ -75,19 +75,3 @@ The potency of AI and LLMs can't be underestimated, even as we strive for more r
 ### Final Thoughts
 
 Whether or not LLMs are "truly" intelligent, their impact is real and growing. As we continue to observe and experiment, our definitions of intelligence—and our expectations for machines—may evolve as well.
-
-### Once philosophical musings, Now: experimental stuff
-
-[Chinese room](https://en.wikipedia.org/wiki/Chinese_room) was a thought experiment ..... (complete this)
-Today's LLMs are sort of like the 'chinese box'
-
-### But does it matter?
-LLMs might not lead us to AGI. There are voices by prominent scientists like yann le cunn who insist that laws of scaling won't get us to AGI (if there is such thing) and we would need something architecturally different. 'Word Calculators' are not truly intelligent.
-
-But does it matter (at least in the practical sense)
-= if a sufficiently trained model can 'reason' about things by virtue of next word prediction and if that reasoning is correct: could we consider that as being intelligent (chinese room)
-= lot of emergent properties that have come out of LLM can be reasoned in the similar way. If we have a system that works as per our observations of the time we can consider that as being correct and as we have more observations we modify the system and our beliefs. That's how scientific research and discoveries have always worked.
-
-
-### It's role in the economy
-Setting aside all the philosophical and technical arguments what are the economic implications of the ongoing boom in AI, we can already see the economic impacts. Economy doesn't work on 'truth', it works based on what majority of the people believe. (just like how stock market works). So we can definitely not undermine the potency of AI or LLM but in the same time strive for better.
